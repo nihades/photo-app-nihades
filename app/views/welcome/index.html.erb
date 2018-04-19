@@ -1,5 +1,8 @@
 <% if current_user %>
-  <h3>Welcome: <%= current_user.email %></h3>
+  <br><br><br>
+  <h2>Welcome: <%= current_user.email %></h2><br>
+  <h4>Have a look at the <%= link_to "Image Gallery", images_path  %></h4>
+  <br><br><br>
 <% else %>
   <div class="jumbotron">
     <h2>Welcome to the Photo Management App!</h2>
